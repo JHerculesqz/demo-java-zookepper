@@ -16,11 +16,11 @@
 	
 3.zookeeper的知识点
 ================
-1.zookeeper典型场景
+**1.zookeeper典型场景**
 
 订阅/负载均衡/命名服务/分布式协调
 
-2.基本架构概念
+**2.基本架构概念**
 
 集群角色(Leader/Follower/Watcher)
 
@@ -34,11 +34,11 @@ watcher(在znode上注册若干的watcher发送变化)
 
 ACL(CREATE/READ/WRITE/DELETE/ADMIN)
 
-3.ZK搭建
+**3.ZK搭建**
 
 单机、集群、伪集群
 
-4.常用命令
+**4.常用命令**
 	
 	./zkcli.sh -timeout 0 -server 127.0.0.1:2181
 	h

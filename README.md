@@ -1,41 +1,44 @@
-=============1.Ä¿±ê================
-ÎªÂÛÖ¤"Ê¹ÓÃzookeeper£¬¿ìËÙ¡¢¿É¿¿¡¢¼°Ê±ÊµÏÖ·Ö²¼Ê½Êı¾İÒ»ÖÂĞÔ"
+1.ç›®æ ‡
+=========================
+ä¸ºè®ºè¯"ä½¿ç”¨zookeeperï¼Œå¿«é€Ÿã€å¯é ã€åŠæ—¶å®ç°åˆ†å¸ƒå¼æ•°æ®ä¸€è‡´æ€§"
 
-=============2.Usage================
+2.Usage
+=========================
 	
-	STEP1.Æô¶¯zookeeper Server
-	STEP2.Æô¶¯zkClientDemo4Registry
-	STEP3.Æô¶¯zkClientDemo4Single
-	STEP4.ä¯ÀÀÆ÷ÖĞ·ÃÎÊhttp://localhost:9000/zkclient/init
-	STEP5.ä¯ÀÀÆ÷ÖĞ·ÃÎÊhttp://localhost:9001/zkclient/init£¬¿É²é¿´zkClientDemo4Registry¿ØÖÆÌ¨ÖĞwatcherµÄ´òÓ¡ĞÅÏ¢
-	STEP6.ä¯ÀÀÆ÷ÖĞ·ÃÎÊhttp://localhost:9001/zkclient/lockService£¬¿É²é¿´zkClientDemo4Single¿ØÖÆÌ¨ÖĞwatcherµÄ´òÓ¡ĞÅÏ¢
-	STEP7.ä¯ÀÀÆ÷ÖĞ·ÃÎÊhttp://localhost:9001/zkclient/releaseService£¬¿É²é¿´zkClientDemo4Single¿ØÖÆÌ¨ÖĞwatcherµÄ´òÓ¡ĞÅÏ¢
-	STEP8.²¹³äËµÃ÷---zkClientDemoÏîÄ¿ÖĞ²ÉÓÃÔ­Éúzookeeper Client API
+	STEP1.å¯åŠ¨zookeeper Server
+	STEP2.å¯åŠ¨zkClientDemo4Registry(gradlesæ„å»ºå·¥ç¨‹æ–¹æ³•ä¸èµ˜è¿°)
+	STEP3.å¯åŠ¨zkClientDemo4Single(gradlesæ„å»ºå·¥ç¨‹æ–¹æ³•ä¸èµ˜è¿°)
+	STEP4.æµè§ˆå™¨ä¸­è®¿é—®http://localhost:9000/zkclient/init
+	STEP5.æµè§ˆå™¨ä¸­è®¿é—®http://localhost:9001/zkclient/initï¼Œå¯æŸ¥çœ‹zkClientDemo4Registryæ§åˆ¶å°ä¸­watcherçš„æ‰“å°ä¿¡æ¯
+	STEP6.æµè§ˆå™¨ä¸­è®¿é—®http://localhost:9001/zkclient/lockServiceï¼Œå¯æŸ¥çœ‹zkClientDemo4Singleæ§åˆ¶å°ä¸­watcherçš„æ‰“å°ä¿¡æ¯
+	STEP7.æµè§ˆå™¨ä¸­è®¿é—®http://localhost:9001/zkclient/releaseServiceï¼Œå¯æŸ¥çœ‹zkClientDemo4Singleæ§åˆ¶å°ä¸­watcherçš„æ‰“å°ä¿¡æ¯
+	STEP8.è¡¥å……è¯´æ˜---zkClientDemoé¡¹ç›®ä¸­é‡‡ç”¨åŸç”Ÿzookeeper Client API
 	
-============3.zookeeperµÄÖªÊ¶µã================
-1.zookeeperµäĞÍ³¡¾°
+3.zookeeperçš„çŸ¥è¯†ç‚¹
+================
+1.zookeeperå…¸å‹åœºæ™¯
 
-¶©ÔÄ/¸ºÔØ¾ùºâ/ÃüÃû·şÎñ/·Ö²¼Ê½Ğ­µ÷
+è®¢é˜…/è´Ÿè½½å‡è¡¡/å‘½åæœåŠ¡/åˆ†å¸ƒå¼åè°ƒ
 
-2.»ù±¾¼Ü¹¹¸ÅÄî
+2.åŸºæœ¬æ¶æ„æ¦‚å¿µ
 
-¼¯Èº½ÇÉ«(Leader/Follower/Watcher)
+é›†ç¾¤è§’è‰²(Leader/Follower/Watcher)
 
-»á»°(»ùÓÚTCP)
+ä¼šè¯(åŸºäºTCP)
 
-Êı¾İ½Úµã(³Ö¾Ãznode£¬ÁÙÊ±znode)
+æ•°æ®èŠ‚ç‚¹(æŒä¹…znodeï¼Œä¸´æ—¶znode)
 
-°æ±¾(versionµ±Ç°znode°æ±¾ºÅ/cversionµ±Ç°znodeµÄ×Ó½Úµã°æ±¾ºÅ/aversionµ±Ç°znodeµÄACL±ä¸ü°æ±¾ºÅ?)
+ç‰ˆæœ¬(versionå½“å‰znodeç‰ˆæœ¬å·/cversionå½“å‰znodeçš„å­èŠ‚ç‚¹ç‰ˆæœ¬å·/aversionå½“å‰znodeçš„ACLå˜æ›´ç‰ˆæœ¬å·?)
 
-watcher(ÔÚznodeÉÏ×¢²áÈô¸ÉµÄwatcher·¢ËÍ±ä»¯)
+watcher(åœ¨znodeä¸Šæ³¨å†Œè‹¥å¹²çš„watcherå‘é€å˜åŒ–)
 
 ACL(CREATE/READ/WRITE/DELETE/ADMIN)
 
-3.ZK´î½¨
+3.ZKæ­å»º
 
-µ¥»ú¡¢¼¯Èº¡¢Î±¼¯Èº
+å•æœºã€é›†ç¾¤ã€ä¼ªé›†ç¾¤
 
-4.³£ÓÃÃüÁî
+4.å¸¸ç”¨å‘½ä»¤
 	
 	./zkcli.sh -timeout 0 -server 127.0.0.1:2181
 	h
@@ -52,9 +55,10 @@ ACL(CREATE/READ/WRITE/DELETE/ADMIN)
 	listquota /node_1
 	delquota -n /node_1
 	history
-	redo <±àºÅ>
+	redo <ç¼–å·>
 	
-5.reference:
+reference
+============================================
 	
 	jikexueyuan
 	java distributed synchronization

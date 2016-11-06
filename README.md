@@ -10,8 +10,8 @@
 	STEP3.启动zkClientDemo4Single(gradles构建工程方法不赘述)
 	STEP4.浏览器中访问http://localhost:9000/zkclient/init
 	STEP5.浏览器中访问http://localhost:9001/zkclient/init，可查看zkClientDemo4Registry控制台中watcher的打印信息
-	STEP6.浏览器中访问http://localhost:9001/zkclient/lockService，可查看zkClientDemo4Single控制台中watcher的打印信息
-	STEP7.浏览器中访问http://localhost:9001/zkclient/releaseService，可查看zkClientDemo4Single控制台中watcher的打印信息
+	STEP6.浏览器中访问http://localhost:9000/zkclient/lockService，可查看zkClientDemo4Single控制台中watcher的打印信息
+	STEP7.浏览器中访问http://localhost:9000/zkclient/releaseService，可查看zkClientDemo4Single控制台中watcher的打印信息
 	STEP8.补充说明---zkClientDemo项目中采用原生zookeeper Client API
 	
 3.zookeeper的知识点
